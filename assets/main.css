@@ -123,7 +123,7 @@ a {
 	overflow: hidden;
 	position: relative;
 	z-index: 2;
-	padding: 6rem 6rem 6rem 6rem;
+	padding: 3.0625rem 3.0625rem 3.0625rem 3.0625rem;
 }
 
 #main {
@@ -161,10 +161,10 @@ a {
 	--border-radius-tr: calc(2rem - 5px);
 	--border-radius-br: calc(2rem - 5px);
 	--border-radius-bl: calc(2rem - 5px);
-	--padding-horizontal: 2.5rem;
-	--padding-vertical: 12rem;
+	--padding-horizontal: 5.25rem;
+	--padding-vertical: 6.125rem;
 	--spacing: 1.125rem;
-	--width: 34rem;
+	--width: 38rem;
 	border-radius: var(--border-radius-tl) var(--border-radius-tr) var(--border-radius-br) var(--border-radius-bl);
 	max-width: 100%;
 	position: relative;
@@ -280,148 +280,6 @@ body.is-instant:after {
 	z-index: 0;
 }
 
-.buttons {
-	cursor: default;
-	display: flex;
-	justify-content: var(--flex-alignment);
-	letter-spacing: 0;
-	padding: 0;
-}
-
-.buttons li {
-	max-width: 100%;
-}
-
-.buttons li a {
-	align-items: center;
-	justify-content: center;
-	max-width: 100%;
-	text-align: center;
-	text-decoration: none;
-	vertical-align: middle;
-	white-space: nowrap;
-}
-
-#buttons01 {
-	justify-content: center;
-	gap: 0.875rem;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-
-#buttons01:not(:first-child) {
-	margin-top: 0.75rem !important;
-}
-
-#buttons01:not(:last-child) {
-	margin-bottom: 0.75rem !important;
-}
-
-#buttons01 li a {
-	display: inline-block;
-	width: 100vw;
-	height: auto;
-	line-height: 2rem;
-	padding: 0 2.5rem;
-	vertical-align: middle;
-	font-family: 'Arial', sans-serif;
-	letter-spacing: -0.075rem;
-	font-size: 2.375em;
-	font-weight: 700;
-	border-radius: 2.25rem;
-	box-shadow: 0.581rem 1.246rem 1.125rem 0rem transparent;
-	direction: var(--site-language-direction);
-	overflow: hidden;
-	text-overflow: ellipsis;
-	padding-bottom: 1.5625rem;
-	padding-top: 1.5625rem;
-	white-space: normal;
-	text-align: var(--alignment);
-	transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
-}
-
-#buttons01 .button {
-	background-color: transparent;
-	color: #000000;
-	background-image: linear-gradient(0deg, transparent 0%, transparent 14%);
-	background-position: 0% 0%;
-	background-repeat: repeat;
-	background-size: cover;
-}
-
-#buttons02 {
-	justify-content: center;
-	gap: 0.875rem;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-
-#buttons02:not(:first-child) {
-	margin-top: 0.75rem !important;
-}
-
-#buttons02:not(:last-child) {
-	margin-bottom: 0.75rem !important;
-}
-
-#buttons02 li a {
-	display: inline-flex;
-	width: 28.625rem;
-	height: auto;
-	line-height: 2rem;
-	padding: 0 2.5rem;
-	vertical-align: middle;
-	font-family: 'Arial', sans-serif;
-	letter-spacing: -0.075rem;
-	font-size: 1.875em;
-	font-weight: 700;
-	border-radius: 2.25rem;
-	box-shadow: 0rem 0rem 0rem 0rem rgba(0,0,0,0.31);
-	flex-direction: row-reverse;
-	justify-content: flex-end;
-	padding-bottom: 1.5625rem;
-	padding-top: 1.5625rem;
-	white-space: normal;
-	align-items: flex-start;
-	transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
-}
-
-#buttons02 li a svg {
-	display: block;
-	fill: #000000;
-	flex-grow: 0;
-	flex-shrink: 0;
-	height: 2rem;
-	min-width: 16px;
-	width: 1.25em;
-	margin-left: 0.5em;
-	margin-right: calc(-0.125em + 0rem);
-	transition: fill 0.25s ease;
-}
-
-#buttons02 li a .label {
-	direction: var(--site-language-direction);
-	overflow: hidden;
-	text-overflow: ellipsis;
-	flex-grow: 1;
-	flex-shrink: 1;
-	text-align: left;
-	width: 100%;
-}
-
-#buttons02 .button {
-	background-color: #FFFFFF;
-	color: #000000;
-	background-image: linear-gradient(0deg, #FFFFFF 0%, rgba(255,255,255,0.008) 100%);
-	background-position: 0% 0%;
-	background-repeat: repeat;
-	background-size: cover;
-}
-
-#buttons02 .button svg {
-	fill: #000000;
-}
-
 .image {
 	display: block;
 	line-height: 0;
@@ -458,6 +316,39 @@ body.is-instant:after {
 .image.full:last-child .frame {
 	border-bottom-left-radius: inherit;
 	border-bottom-right-radius: inherit;
+}
+
+#image02 {
+	text-align: center;
+}
+
+#image02:not(:first-child) {
+	margin-top: 1.875rem !important;
+}
+
+#image02:not(:last-child) {
+	margin-bottom: 1.875rem !important;
+}
+
+#image02 .frame {
+	width: 7.25rem;
+	height: 7.125rem;
+	transition: none;
+}
+
+#image02 img {
+	height: 100% !important;
+	object-fit: cover;
+	object-position: top right;
+	width: 100% !important;
+}
+
+#image02 .frame img {
+	transition: none;
+}
+
+#image01 {
+	text-align: center;
 }
 
 #image01:not(:first-child) {
@@ -522,6 +413,101 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	margin-top: 1rem;
 }
 
+.buttons {
+	cursor: default;
+	display: flex;
+	justify-content: var(--flex-alignment);
+	letter-spacing: 0;
+	padding: 0;
+}
+
+.buttons li {
+	max-width: 100%;
+}
+
+.buttons li a {
+	align-items: center;
+	justify-content: center;
+	max-width: 100%;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+#buttons02 {
+	justify-content: center;
+	gap: 0.875rem;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#buttons02:not(:first-child) {
+	margin-top: 3.125rem !important;
+}
+
+#buttons02:not(:last-child) {
+	margin-bottom: 3.125rem !important;
+}
+
+#buttons02 li a {
+	display: inline-flex;
+	width: 28.625rem;
+	height: auto;
+	line-height: 2rem;
+	padding: 0 2.5rem;
+	vertical-align: middle;
+	font-family: 'Arial', sans-serif;
+	letter-spacing: -0.075rem;
+	font-size: 1.875em;
+	font-weight: 700;
+	border-radius: 2.25rem;
+	box-shadow: 0rem 0rem 0rem 0rem #D11400;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+	padding-bottom: 1.5625rem;
+	padding-top: 1.5625rem;
+	white-space: normal;
+	align-items: flex-start;
+	transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
+#buttons02 li a svg {
+	display: block;
+	fill: #D11400;
+	flex-grow: 0;
+	flex-shrink: 0;
+	height: 2rem;
+	min-width: 16px;
+	width: 1.25em;
+	margin-left: 0.5em;
+	margin-right: calc(-0.125em + 0rem);
+	transition: fill 0.25s ease;
+}
+
+#buttons02 li a .label {
+	direction: var(--site-language-direction);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	flex-grow: 1;
+	flex-shrink: 1;
+	text-align: left;
+	width: 100%;
+}
+
+#buttons02 .button {
+	background-color: #FFBF13;
+	color: #D11400;
+	background-image: linear-gradient(0deg, transparent 0%, rgba(255,191,19,0.008) 100%);
+	background-position: 0% 0%;
+	background-repeat: repeat;
+	background-size: cover;
+}
+
+#buttons02 .button svg {
+	fill: #D11400;
+}
+
 @media (max-width: 1920px) {
 	
 }
@@ -565,34 +551,24 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		--spacing: 1.125rem;
 	}
 	
-	#buttons01:not(:first-child) {
-		margin-top: 3.5rem !important;
+	#image02:not(:first-child) {
+		margin-top: 1.40625rem !important;
 	}
 	
-	#buttons01:not(:last-child) {
-		margin-bottom: 3.5rem !important;
+	#image02:not(:last-child) {
+		margin-bottom: 1.40625rem !important;
 	}
 	
-	#buttons01 li a {
-		letter-spacing: -0.025rem;
-		font-size: 1.625em;
+	#image02 .frame {
+		width: 7.25rem;
+		height: 8.90625rem !important;
 	}
 	
-	#buttons02:not(:first-child) {
-		margin-top: 3.5rem !important;
-	}
-	
-	#buttons02:not(:last-child) {
-		margin-bottom: 3.5rem !important;
-	}
-	
-	#buttons02 li a {
-		letter-spacing: -0.025rem;
-		font-size: 1.625em;
-	}
-	
-	#buttons02 li a svg {
-		width: 1em;
+	#image02 img {
+		height: 100% !important;
+		object-fit: cover;
+		object-position: top right;
+		width: 100% !important;
 	}
 	
 	#image01:not(:first-child) {
@@ -621,6 +597,23 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		font-size: 1.625em;
 		line-height: 1.175;
 	}
+	
+	#buttons02:not(:first-child) {
+		margin-top: 3.5rem !important;
+	}
+	
+	#buttons02:not(:last-child) {
+		margin-bottom: 3.5rem !important;
+	}
+	
+	#buttons02 li a {
+		letter-spacing: -0.025rem;
+		font-size: 1.625em;
+	}
+	
+	#buttons02 li a svg {
+		width: 1em;
+	}
 }
 
 @media (max-width: 480px) {
@@ -632,14 +625,12 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		--spacing: 0.984375rem;
 	}
 	
-	#buttons01 {
-		flex-direction: column;
-		flex-wrap: nowrap;
+	#image02 .frame {
+		height: 7.125rem !important;
 	}
 	
-	#buttons01 li a {
-		max-width: 100%;
-		width: 100%;
+	#image01 .frame {
+		height: 15.5rem !important;
 	}
 	
 	#buttons02 {
@@ -650,10 +641,6 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	#buttons02 li a {
 		max-width: 32rem;
 		width: 100%;
-	}
-	
-	#image01 .frame {
-		height: 15.5rem !important;
 	}
 }
 
@@ -668,12 +655,8 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		--spacing: 0.84375rem;
 	}
 	
-	#buttons01 {
-		gap: 0.65625rem;
-	}
-	
-	#buttons02 {
-		gap: 0.65625rem;
+	#image02 .frame {
+		height: 6.234375rem !important;
 	}
 	
 	#image01 .frame {
@@ -682,5 +665,9 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	
 	#text02 {
 		font-size: 1.5em;
+	}
+	
+	#buttons02 {
+		gap: 0.65625rem;
 	}
 }
